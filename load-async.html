@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script>
+      window.addEventListener('load', () => {   
+          const e = document.createElement('script');
+          const render = '6LezGnQcAAAAAD5T1ReYv_OMo1EJbDUfPu7srRhU';
+          e.setAttribute('src', `https://www.google.com/recaptcha/api.js?render=${render}`);
+          e.setAttribute('async', 'true');
+          document.head.appendChild(e);
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Hello world!</h2>
+    <p>We're loading recaptcha on DOM load event</p>
+  </body>
+</html>
