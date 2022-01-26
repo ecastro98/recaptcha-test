@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script>
+      window.addEventListener('load', () => {   
+          const __recaptchaLoad = () => {
+              const e = document.createElement('script');
+              const render = 'recaptchakey';
+              e.setAttribute('src', `https://www.google.com/recaptcha/api.js?render=${render}`);
+              document.head.appendChild(e);
+
+              window.removeEventListener('scroll', __recaptchaLoad, false);
+          }
+
+          window.addEventListener('scroll', __recaptchaLoad, false);
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Hello world!</h2>
+    <p>We're loading recaptcha on user scroll event</p>
+  </body>
+</html>
